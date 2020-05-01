@@ -6,7 +6,7 @@ import math
 
 points = []
 # csv to multi_dimensional list
-with open("irish.csv",'r') as file:
+with open("iris.csv",'r') as file:
     reader = csv.reader(file)
     for row in reader:
         # point = []
@@ -80,9 +80,9 @@ def min_dist(x,ctrs):
     return index
 
 
-clusters = k_means(points,k=4)
+clusters = k_means(points,k=3)
 
-colormap = ['r','g','b','y']
+colormap = ['r','g','b']
 cnt = 0
 for cluster in clusters:
     X,Y = [],[]

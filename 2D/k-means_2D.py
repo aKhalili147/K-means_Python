@@ -9,9 +9,6 @@ points = []
 with open("iris.csv",'r') as file:
     reader = csv.reader(file)
     for row in reader:
-        # point = []
-        # point.append(float(row[0])) # x coordinate
-        # point.append(float(row[1])) # y coordinate
         points.append([float(row[2]),float(row[3])])
 
 
